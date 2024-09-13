@@ -1,0 +1,268 @@
+.prt-partnership-section2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #E8FCCF;
+    padding: 20px;
+}
+
+.prt-partnership-section2 h2 {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.prt-card-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping of cards */
+}
+
+.prt-card2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Ensures spacing between rows */
+}
+
+.prt-card-icon2 {
+    text-align: left;
+}
+
+.prt-card-icon2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.prt-card2 h3 {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.prt-card2 p {
+    text-align: left;
+    color: #666;
+}
+
+.prt-book-meeting2 {
+    background-color: #E8FCCF;
+    border: 2px solid #00B140;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #00B140;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.prt-book-meeting2 span {
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+.prt-book-meeting2:hover span {
+    transform: translateX(5px);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .prt-partnership-section2 h2 {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+
+    .prt-card-container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prt-card2 {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .prt-card-icon2 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .prt-card2 h3 {
+        font-size: 1em;
+    }
+
+    .prt-card2 p {
+        font-size: 0.8em;
+    }
+}
+
+.prd-partnership-section2 {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.prd-card-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.prd-partnership-card2 {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of cards */
+}
+
+.prd-partnership-card2.prd-reverse2 {
+    flex-direction: row-reverse;
+}
+
+.prd-card-image2 img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.prd-partnership-card2.prd-reverse2 .prd-card-image2 img {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.prd-card-content2 {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.prd-partnership-card2.prd-reverse2 .prd-card-content2 {
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+.prd-card-content2 h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.prd-card-content2 p {
+    color: #666;
+    text-align: left;
+}
+
+.prd-meeting-button2 {
+    background-color: #E8FCCF;
+    border: 2px solid #00B140;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #00B140;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.prd-meeting-button2 span {
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+.prd-meeting-button2:hover span {
+    transform: translateX(5px);
+}
+
+.prd-video-container2 {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.prd-video-container2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.prd-play-button2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #00B140;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .prd-partnership-section2 {
+        width: 90%;
+    }
+
+    .prd-card-container2 {
+        gap: 20px;
+    }
+
+    .prd-partnership-card2 {
+        flex-direction: column;
+    }
+
+    .prd-card-image2 img {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .prd-card-content2 {
+        padding: 10px;
+    }
+
+    .prd-card-content2 h3 {
+        font-size: 1.2em;
+    }
+
+    .prd-card-content2 p {
+        font-size: 0.9em;
+    }
+
+    .prd-video-container2 {
+        width: 100%;
+    }
+
+    .prd-play-button2 {
+        bottom: 10px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+}

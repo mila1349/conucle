@@ -1,0 +1,128 @@
+.slider-section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+  height: 100vh; /* or your desired height */
+  overflow: hidden;
+  border-radius: 12px; /* Rounded corners for a modern look */
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+}
+
+.slides-wrapper {
+  display: flex;
+  transition: transform 1s ease-in-out; /* Smooth sliding effect */
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 3rem;
+  transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+.text-content {
+  max-width: 35%;
+  border-radius: 8px; /* Rounded corners for the text container */
+  padding: 20px;
+}
+
+.text-content h1 {
+  margin: 0 0 20px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+/* .text-content p {
+  margin-bottom: 30px;
+} */
+
+.cta-button-sl {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 20px;
+  border: 2px solid #00b400;
+  color: #00b400;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.cta-button-sl img {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.cta-button-sl:hover {
+  background-color: #00b400;
+  color: #ffffff;
+}
+
+.image-content {
+  width: 65%;
+  img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px; /* Rounded corners for the image */
+  }
+}
+
+.dots-container-1 {
+  position: absolute;
+  bottom: 20px;
+
+  right: 0;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active-dot {
+  background-color: #00b400;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-section {
+    height: auto;
+  }
+
+  .text-content {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 36px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .cta-button-sl {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .dots-container-1 {
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,175 @@
+.rg-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.rg-image-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rg-image-container img {
+  width: 80%;
+  height: auto;
+}
+
+.rg-form-container {
+  flex: 1;
+  padding: 40px;
+  max-width: 400px;
+  margin-right: 40px;
+}
+
+.rg-form-container h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #333;
+}
+
+.rg-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.rg-form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.rg-half-width {
+  width: 48%;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rg-checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rg-checkbox-row label {
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+
+.rg-signup-btn {
+  background-color: #00b140;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rg-signup-btn:hover {
+  background-color: #009a2d; /* Add a hover color */
+}
+
+.rg-signup-btn a {
+  color: white !important;
+  text-decoration: none;
+  background-color: #00b140;
+}
+
+.rg-login-link {
+  margin-top: 20px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.rg-login-link a {
+  color: #00b140;
+  text-decoration: none;
+}
+
+.rg-social-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rg-social-login span {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+form input {
+  background-color: #f0f0f0;
+}
+
+.rg-social-icons a {
+  margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rg-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rg-form-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .rg-form-row {
+    flex-direction: column;
+  }
+
+  .rg-half-width {
+    width: 100%;
+  }
+
+  .rg-signup-btn {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rg-form-container h2 {
+    font-size: 1.5em;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .rg-signup-btn {
+    padding: 12px;
+    font-size: 0.9em;
+  }
+}
+
+.rg-success-message {
+  color: #fff;
+  background-color: #28a745; /* Green background */
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
