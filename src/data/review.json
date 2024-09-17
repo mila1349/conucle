@@ -8,30 +8,30 @@
   },
   {
     "id": 2,
-    "name": "Cassandra Lee",
-    "title": "Software Engineer, Google",
+    "name": "Lee Taeyong",
+    "title": "Art Director",
     "review": "The visual development tools are incredibly intuitive, allowing us to build and deploy applications faster than ever. Our team’s productivity has skyrocketed since we adopted this platform. We’ve been able to focus more on innovation rather than coding from scratch.",
     "img": "assets/"
   },
   {
     "id": 3,
-    "name": "Cassandra Lee",
-    "title": "Software Engineer, Google",
+    "name": "Haechan",
+    "title": "Comedian",
     "review": "The visual development tools are incredibly intuitive, allowing us to build and deploy applications faster than ever. Our team’s productivity has skyrocketed since we adopted this platform. We’ve been able to focus more on innovation rather than coding from scratch.",
-    "img": "assets/"
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/33/20231006_Haechan_%28NCT%29.jpg"
   },
   {
     "id": 4,
-    "name": "Cassandra Lee",
-    "title": "Software Engineer, Google",
+    "name": "Nakamoto Yuta",
+    "title": "Teacher",
     "review": "The visual development tools are incredibly intuitive, allowing us to build and deploy applications faster than ever. Our team’s productivity has skyrocketed since we adopted this platform. We’ve been able to focus more on innovation rather than coding from scratch.",
-    "img": "assets/"
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/48/20231006_Yuta_%28NCT%29.jpg"
   },
   {
     "id": 5,
-    "name": "Cassandra Lee",
-    "title": "Software Engineer, Google",
+    "name": "Huang Guan Heng",
+    "title": "Dancer",
     "review": "The visual development tools are incredibly intuitive, allowing us to build and deploy applications faster than ever. Our team’s productivity has skyrocketed since we adopted this platform. We’ve been able to focus more on innovation rather than coding from scratch.",
-    "img": "assets/"
+    "img": "https://upload.wikimedia.org/wikipedia/commons/8/86/Hendery_Wong_at_Incheon_International_Airport%2C_South_Korea%2C_May_2019_01.png"
   }
 ]

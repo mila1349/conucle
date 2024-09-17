@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./LandingPage.scss";
-import landimg1 from "../assets/landimg1.png";
-import Secimage from "../assets/section-image.png";
-import Cardimg1 from "../assets/card-girl1.jpeg";
-import Cardimg2 from "../assets/card-boy1.jpeg";
 import Vdev from "../assets/vis-dev.png";
 import PreBuilt from "../assets/pre-bult.png";
 import RealTime from "../assets/real-time.png";
@@ -16,12 +12,12 @@ import Footer from "./Footer";
 import TextSlideUp from "../effects/TextSlideUp";
 import TextFadeIn from "../effects/TextFadeIn";
 import { AnimatePresence, motion } from "framer-motion";
-import reviews from "../data/review.json";
+import ButtonArrow from "./ButtonArrow";
 
 const variants = {
   hidden: {
-    top: 0,
-    left: 0,
+    top: -100,
+    left: -100,
     opacity: 0,
     zIndex: 100,
   },
@@ -33,7 +29,7 @@ const variants = {
 };
 
 const LandingPage = () => {
-  const [view, setView] = useState(true);
+  const [view, setView] = useState(false);
   const [exit, setExit] = useState(null);
   const [reviewData, setReviewData] = useState([
     {
@@ -42,52 +38,55 @@ const LandingPage = () => {
       title: "Software Engineer, Google",
       review:
         "The visual development tools are incredibly intuitive, allowing us to build and deploy applications faster than ever. Our team’s productivity has skyrocketed since we adopted this platform. We’ve been able to focus more on innovation rather than coding from scratch.",
-      img: "assets/",
+      img: "assets/card-girl1.jpeg",
     },
     {
       id: 1,
-      name: "Cassandra Lee",
-      title: "Software Engineer, Google",
+      name: "Lee Taeyong",
+      title: "Art Director",
       review:
         "The visual development tools are incredibly intuitive, allowing us to build and deploy applications faster than ever. Our team’s productivity has skyrocketed since we adopted this platform. We’ve been able to focus more on innovation rather than coding from scratch.",
-      img: "assets/",
+      img: "assets/card-boy1.jpeg",
     },
     {
       id: 2,
-      name: "Cassandra Lee",
-      title: "Software Engineer, Google",
+      name: "Haechan",
+      title: "Comedian",
       review:
         "The visual development tools are incredibly intuitive, allowing us to build and deploy applications faster than ever. Our team’s productivity has skyrocketed since we adopted this platform. We’ve been able to focus more on innovation rather than coding from scratch.",
-      img: "assets/",
+      img: "https://upload.wikimedia.org/wikipedia/commons/3/33/20231006_Haechan_%28NCT%29.jpg",
     },
     {
       id: 3,
-      name: "Cassandra Lee",
-      title: "Software Engineer, Google",
+      name: "Nakamoto Yuta",
+      title: "Teacher",
       review:
         "The visual development tools are incredibly intuitive, allowing us to build and deploy applications faster than ever. Our team’s productivity has skyrocketed since we adopted this platform. We’ve been able to focus more on innovation rather than coding from scratch.",
-      img: "assets/",
+      img: "https://upload.wikimedia.org/wikipedia/commons/4/48/20231006_Yuta_%28NCT%29.jpg",
     },
     {
       id: 4,
-      name: "Cassandra Lee",
-      title: "Software Engineer, Google",
+      name: "Huang Guan Heng",
+      title: "Dancer",
       review:
         "The visual development tools are incredibly intuitive, allowing us to build and deploy applications faster than ever. Our team’s productivity has skyrocketed since we adopted this platform. We’ve been able to focus more on innovation rather than coding from scratch.",
-      img: "assets/",
+      img: "https://upload.wikimedia.org/wikipedia/commons/8/86/Hendery_Wong_at_Incheon_International_Airport%2C_South_Korea%2C_May_2019_01.png",
     },
   ]);
 
   const getOpacity = (index) => {
     if (index === 0) {
       return "100%";
-    } else if (index > 0) {
-      return `${20 - (index - 1) * 10}%`;
+    } else if (index === 1) {
+      return "80%";
+    } else if (index === 2) {
+      return "50%";
+    } else {
+      return "0%";
     }
   };
 
   function prev() {
-    console.log("prevvvv");
     if (!exit) {
       const added = reviewData.pop();
       setReviewData([added, ...reviewData]);
@@ -97,7 +96,6 @@ const LandingPage = () => {
   }
 
   function next() {
-    console.log("nexttt");
     if (exit) {
       const hilang = reviewData.shift();
       setReviewData([...reviewData, hilang]);
@@ -113,10 +111,6 @@ const LandingPage = () => {
       next();
     }
   }, [exit]);
-
-  useEffect(() => {
-    console.log("reviewdata", reviewData);
-  }, [reviewData]);
 
   useLocoScroll(true);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -296,47 +290,59 @@ const LandingPage = () => {
             transformed their businesses with our low-code cloud platform."
             />
           </p>
-          <Button text="Start Free Trial" />
-          <button onClick={() => prev()}>prev</button>
-          <button onClick={() => next()}>next</button>
+          {/* <Button text="Start Free Trial" /> */}
+          <div className="btn-card-container">
+            <ButtonArrow left color="white" onClick={() => prev()}>
+              prev
+            </ButtonArrow>
+            <ButtonArrow color="green" onClick={() => next()}>
+              next
+            </ButtonArrow>
+          </div>
         </div>
 
-        <div className="cards-container1">
-          {reviewData.map((item) => (
+        <motion.div
+          className="cards-container1"
+          whileInView={() => setView(true)}
+        >
+          {reviewData.map((item, index) => (
             <AnimatePresence>
-              <motion.div className={`card1 card-item-${item.id}`}
-              style={{
-                top: `${item.id *7}px`,
-                left: `${item.id *3}px`,
-                zIndex: 0 + (reviewData.length -item.id),
-                opacity: getOpacity(item.id),
-              }}
-              initial={
-                exit === null
-                  ? "initView"
-                  : !exit && reviewData[0].pos === reviewData.id && "hidden"
-              }
-              animate={
-                view && !exit
-                  ? {
-                      top: `${item.id *7}px`,
-                      left: `${item.id *3}px`,
-                      zIndex: 0 + (reviewData.length - item.id),
-                      opacity: getOpacity(item.id),
-                    }
-                  : {}
-              }
-              exit={exit && "hidden"}
-              transition={
-                exit === null
-                  ? {
-                      duration: 0.2,
-                      delay: 0.5 * (reviewData.length - item.id - 1),
-                    }
-                  : { duration: 0.2 }
-              }
+              <motion.div
+                className={`card1 card-item-${index}`}
+                key={item.id}
+                variants={variants}
+                style={{
+                  top: `${index * 20}px`,
+                  left: `${index * 30}px`,
+                  zIndex: 0 + (reviewData.length - index),
+                  opacity: getOpacity(index),
+                }}
+                initial={
+                  exit === null
+                    ? "initView"
+                    : !exit && reviewData[0].id === item.id && "hidden"
+                }
+                animate={
+                  view && !exit
+                    ? {
+                        top: `${index * 20}px`,
+                        left: `${index * 30}px`,
+                        zIndex: 0 + (reviewData.length - index),
+                        opacity: getOpacity(index),
+                      }
+                    : {}
+                }
+                exit={exit && "hidden"}
+                transition={
+                  exit === null
+                    ? {
+                        duration: 0.2,
+                        delay: 0.5 * (reviewData.length - index - 1),
+                      }
+                    : { duration: 0.2 }
+                }
               >
-                <img src={Cardimg1} alt="Customerimg" />
+                <img src={item.img} alt="Customerimg" />
                 <div className="description">
                   <span>
                     <h4>{item.name}</h4>
@@ -345,9 +351,9 @@ const LandingPage = () => {
                   <p>{item.review}</p>
                 </div>
               </motion.div>
-              </AnimatePresence>
+            </AnimatePresence>
           ))}
-        </div>
+        </motion.div>
       </section>
       {/* end of section */}
 

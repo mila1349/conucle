@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./InvestorPage.scss";
 import { Googlesheet } from "./Googlesheet";
-import "@wistia/wistia-player";
+import ReactPlayer from "react-player";
 import release from "../data/release.json";
+import "@wistia/wistia-player";
 
 import Button from "./Button";
 import Footer from "./Footer";
@@ -97,7 +98,9 @@ const InvestorPage = () => {
   return (
     <div className="home-container" id="main-container">
       <header>
-        <h1><TextSlideUp>Journey So far</TextSlideUp></h1>
+        <h1>
+          <TextSlideUp>Journey So far</TextSlideUp>
+        </h1>
       </header>
       <section className="timeline">
         {/* <video autoPlay muted loop playsInline className="background-video">
@@ -106,55 +109,65 @@ const InvestorPage = () => {
     </video> */}
         <div className="container-jr right">
           <div className="text">
-            <h2><TextSlideUp>June: Launch & Growth</TextSlideUp></h2>
+            <h2>
+              <TextSlideUp>June: Launch & Growth</TextSlideUp>
+            </h2>
             <p style={{ color: "white" }}>2023</p>
           </div>
           <div className="content-jr">
             <img src="assets/cloud.png" alt="Cloud" />
             <p>
-            <TextFadeIn defaultValue='Within the first week, customers began to sign up. Our support
+              <TextFadeIn
+                defaultValue="Within the first week, customers began to sign up. Our support
               team was on high alert, ready to assist with any issues. We held
               our breath, waiting for feedback. To our delight, the response was
               overwhelmingly positive. Users appreciated the platforms intuitive design and robust features. We collected every piece of
-              feedback, knowing it was invaluable for our growth.'/>
-              
+              feedback, knowing it was invaluable for our growth."
+              />
             </p>
             <Button text="Read More" />
           </div>
         </div>
         <div className="container-jr left">
           <div className="text">
-            <h2><TextSlideUp>June: Launch & Growth</TextSlideUp></h2>
+            <h2>
+              <TextSlideUp>June: Launch & Growth</TextSlideUp>
+            </h2>
             <p style={{ color: "white" }}>2023</p>
           </div>
           <div className="content-jr">
             <img src="assets/cloud.png" alt="Cloud" />
             <p>
-            <TextFadeIn defaultValue=' Within the first week, customers began to sign up. Our support
+              <TextFadeIn
+                defaultValue=" Within the first week, customers began to sign up. Our support
               team was on high alert, ready to assist with any issues. We held
               our breath, waiting for feedback. To our delight, the response was
               overwhelmingly positive. Users appreciated the platforms
               intuitive design and robust features. We collected every piece of
-              feedback, knowing it was invaluable for our growth.'/>
-             
+              feedback, knowing it was invaluable for our growth."
+              />
             </p>
             <Button text="Read More" />
           </div>
         </div>
         <div className="container-jr right">
           <div className="text">
-            <h2><TextSlideUp>June: Launch & Growth</TextSlideUp></h2>
+            <h2>
+              <TextSlideUp>June: Launch & Growth</TextSlideUp>
+            </h2>
             <p style={{ color: "white" }}>2023</p>
           </div>
           <div className="content-jr">
             <img src="assets/cloud.png" alt="Cloud" />
             <p>
-            <TextFadeIn defaultValue=' Within the first week, customers began to sign up. Our support
+              <TextFadeIn
+                defaultValue=" Within the first week, customers began to sign up. Our support
               team was on high alert, ready to assist with any issues. We held
               our breath, waiting for feedback. To our delight, the response was
               overwhelmingly positive. Users appreciated the platforms
               intuitive design and robust features. We collected every piece of
-              feedback, knowing it was invaluable for our growth.'/>
+              feedback, knowing it was invaluable for our growth."
+              />
             </p>
             <Button text="Read More" />
           </div>
@@ -166,34 +179,39 @@ const InvestorPage = () => {
         <div className="main-container">
           <div className="text-section-left">
             <h1>
-            <TextSlideUp>Our Legacy: Transforming Cloud Technology</TextSlideUp>
+              <TextSlideUp>
+                Our Legacy: Transforming Cloud Technology
+              </TextSlideUp>
             </h1>
           </div>
           <div className="text-section-right">
             <p>
-              <TextFadeIn defaultValue='Welcome to [Company Name], where innovation meets excellence in
+              <TextFadeIn
+                defaultValue="Welcome to [Company Name], where innovation meets excellence in
               cloud technology. Founded with a vision to redefine the digital
               landscape, our company is dedicated to providing cutting-edge
               cloud solutions that empower businesses to thrive in an
-              ever-evolving technological world.'/>
-              
+              ever-evolving technological world."
+              />
             </p>
             <p>
-            <TextFadeIn defaultValue='[Company Name] was established in [Year] by a team of visionary
+              <TextFadeIn
+                defaultValue="[Company Name] was established in [Year] by a team of visionary
               tech enthusiasts who saw the potential of the cloud to transform
               how businesses operate. With a combined experience of over [X]
               years in cloud computing, software development, and enterprise
               solutions, our founders embarked on a mission to create a platform
               that is not only robust and reliable but also user-centric and
-              adaptable.'/>
-              
+              adaptable."
+              />
             </p>
           </div>
         </div>
 
         <div className="info-section">
           <p>
-          <TextFadeIn defaultValue='From our humble beginnings, we have grown into a leading player in
+            <TextFadeIn
+              defaultValue="From our humble beginnings, we have grown into a leading player in
             the cloud industry, serving clients across various sectors including
             finance, healthcare, education, and technology. Our commitment to
             innovation and customer satisfaction has been the driving force
@@ -202,8 +220,8 @@ const InvestorPage = () => {
             seasoned engineers to creative problem solvers, each member brings
             unique skills and insights that contribute to our collective
             mission. We foster a collaborative and dynamic work environment
-            where innovation thrives and ideas flourish.'/>
-            
+            where innovation thrives and ideas flourish."
+            />
           </p>
         </div>
 
@@ -213,17 +231,28 @@ const InvestorPage = () => {
 
         <div className="stats-wrapper">
           <div className="stat-item">
-            <h2><TextSlideUp>35 ++</TextSlideUp></h2>
+            <h2>
+              <TextSlideUp>35 ++</TextSlideUp>
+            </h2>
             <p>
-            <TextFadeIn defaultValue='Open Source App Already Listed'/></p>
+              <TextFadeIn defaultValue="Open Source App Already Listed" />
+            </p>
           </div>
           <div className="stat-item">
-            <h2><TextSlideUp>10</TextSlideUp></h2>
-            <p><TextFadeIn defaultValue='Data Center In Cloud Partnership Network'/></p>
+            <h2>
+              <TextSlideUp>10</TextSlideUp>
+            </h2>
+            <p>
+              <TextFadeIn defaultValue="Data Center In Cloud Partnership Network" />
+            </p>
           </div>
           <div className="stat-item">
-            <h2><TextSlideUp>5</TextSlideUp></h2>
-            <p><TextFadeIn defaultValue='Enterprises In Pilot Program Network'/></p>
+            <h2>
+              <TextSlideUp>5</TextSlideUp>
+            </h2>
+            <p>
+              <TextFadeIn defaultValue="Enterprises In Pilot Program Network" />
+            </p>
           </div>
         </div>
       </div>
@@ -231,54 +260,72 @@ const InvestorPage = () => {
       {/* third potencial section start from here  */}
 
       <div className="container-pt">
-        <h1><TextSlideUp>Unleashing Potential:</TextSlideUp></h1>
-        <h1><TextSlideUp>The Power of Our Solutions</TextSlideUp></h1>
+        <h1>
+          <TextSlideUp>Unleashing Potential:</TextSlideUp>
+        </h1>
+        <h1>
+          <TextSlideUp>The Power of Our Solutions</TextSlideUp>
+        </h1>
 
         <div className="features-pt">
           <div className="feature-item">
             <img src="assets/solution1.png" alt="Reduce Budget" />
-            <h3><TextSlideUp>Cut Down Development Costs By 70%</TextSlideUp></h3>
+            <h3>
+              <TextSlideUp>Cut Down Development Costs By 70%</TextSlideUp>
+            </h3>
             <p>
-            <TextFadeIn defaultValue='Our solution lets product owners focus on core functionalities,
-              streamlining development and heavily reducing costs.'/>
-              
+              <TextFadeIn
+                defaultValue="Our solution lets product owners focus on core functionalities,
+              streamlining development and heavily reducing costs."
+              />
             </p>
           </div>
           <div className="feature-item">
             <img src="assets/solution2.png" alt="Save Time" />
-            <h3><TextSlideUp>Reduce Big Data Management Costs by 60%</TextSlideUp></h3>
+            <h3>
+              <TextSlideUp>Reduce Big Data Management Costs by 60%</TextSlideUp>
+            </h3>
             <p>
-            <TextFadeIn defaultValue='AI-powered scalability automatically tunes databases, reduces
+              <TextFadeIn
+                defaultValue="AI-powered scalability automatically tunes databases, reduces
               latency, and handles large data volumes efficiently, cutting
-              management costs by 70%.'/>
-              
+              management costs by 70%."
+              />
             </p>
           </div>
 
           <div className="feature-item">
             <img src="assets/solution3.png" alt="Data Compliance" />
-            <h3><TextSlideUp>Data Compliance Costs Eliminated by 50%</TextSlideUp></h3>
+            <h3>
+              <TextSlideUp>Data Compliance Costs Eliminated by 50%</TextSlideUp>
+            </h3>
             <p>
-            <TextFadeIn defaultValue='Pre-packaged with integrated compliance features, real-time SIEM
+              <TextFadeIn
+                defaultValue="Pre-packaged with integrated compliance features, real-time SIEM
               monitoring, and credential-free workflows, our solution slashes
-              data compliance reporting costs.'/>
-              
+              data compliance reporting costs."
+              />
             </p>
           </div>
           <div className="feature-item">
             <img src="assets/solution4.png" alt="Code Duplicacy" />
-            <h3><TextSlideUp>Reduce Code Duplicacy by 50%</TextSlideUp></h3>
+            <h3>
+              <TextSlideUp>Reduce Code Duplicacy by 50%</TextSlideUp>
+            </h3>
             <p>
-            <TextFadeIn defaultValue='By avoiding the need to develop everything from scratch, our
-              solution reduces code duplicity in your project by up to 80%.'/>
-              
+              <TextFadeIn
+                defaultValue="By avoiding the need to develop everything from scratch, our
+              solution reduces code duplicity in your project by up to 80%."
+              />
             </p>
           </div>
         </div>
 
         <div className="cta-section">
           <div className="cta-text">
-            <h3><TextSlideUp>Let's discuss about our products</TextSlideUp></h3>
+            <h3>
+              <TextSlideUp>Let's discuss about our products</TextSlideUp>
+            </h3>
             <a href="#" className="cta-button">
               Book a Call
             </a>
@@ -293,50 +340,47 @@ const InvestorPage = () => {
       <div className="container-bn">
         <div className="main-banner">
           <div className="banner-img">
-            <wistia-player
-              media-id={wistiaVideos[0].id}
-              player-color="1e64f0"
-            ></wistia-player>
+            <ReactPlayer
+              url={"https://home.wistia.com/medias/nh7xw6o6x1"}
+              width="100%"
+            ></ReactPlayer>
+            {/* <wistia-player
+              media-id={"nh7xw6o6x1"}
+              // width="100%"
+            ></wistia-player> */}
           </div>
           <div className="banner-content">
             <h1>
-            <TextSlideUp>cloud platform that simplifies technology and accelerates your
-              business growth</TextSlideUp>
-              
+              cloud platform that simplifies technology and accelerates your
+              business growth
             </h1>
-            <div className="play-button-main">
-              <i class="fas fa-play-circle"></i>
-            </div>
           </div>
         </div>
 
         <div className="video-card-bns">
           <div className="card-bn">
             <div className="banner-img">
-              <wistia-player
-                media-id={wistiaVideos[0].id}
-                player-color="1e64f0"
-              ></wistia-player>
+              <ReactPlayer
+                url={"https://home.wistia.com/medias/nh7xw6o6x1"}
+                width="100%"
+              ></ReactPlayer>
             </div>
-            <div className="play-button">
-              <i class="fas fa-play-circle"></i>
-            </div>
+
             <p>
-            <TextFadeIn defaultValue='Cut Down on the Development Budget: Eliminate the need of DevOps
-              with our auto managed solutions'/>
-              
+              <TextFadeIn
+                defaultValue="Cut Down on the Development Budget: Eliminate the need of DevOps
+              with our auto managed solutions"
+              />
             </p>
           </div>
           <div className="card-bn">
             <div className="banner-img">
-              <wistia-player
-                media-id={wistiaVideos[0].id}
-                player-color="1e64f0"
-              ></wistia-player>
+              <ReactPlayer
+                url={"https://home.wistia.com/medias/nh7xw6o6x1"}
+                width="100%"
+              ></ReactPlayer>
             </div>
-            <div className="play-button">
-              <i class="fas fa-play-circle"></i>
-            </div>
+
             <p>
               Cut Down on the Development Budget: Eliminate the need of DevOps
               with our auto managed solutions
@@ -344,14 +388,12 @@ const InvestorPage = () => {
           </div>
           <div className="card-bn">
             <div className="banner-img">
-              <wistia-player
-                media-id={wistiaVideos[0].id}
-                player-color="1e64f0"
-              ></wistia-player>
+              <ReactPlayer
+                url={"https://home.wistia.com/medias/nh7xw6o6x1"}
+                width="100%"
+              ></ReactPlayer>
             </div>
-            <div className="play-button">
-              <i class="fas fa-play-circle"></i>
-            </div>
+
             <p>
               Cut Down on the Development Budget: Eliminate the need of DevOps
               with our auto managed solutions
@@ -359,18 +401,17 @@ const InvestorPage = () => {
           </div>
           <div className="card-bn">
             <div className="banner-img">
-              <wistia-player
-                media-id={wistiaVideos[0].id}
-                player-color="1e64f0"
-              ></wistia-player>
+              <ReactPlayer
+                url={"https://home.wistia.com/medias/nh7xw6o6x1"}
+                width="100%"
+              ></ReactPlayer>
             </div>
-            <div className="play-button">
-              <i class="fas fa-play-circle"></i>
-            </div>
+
             <p>
-            <TextFadeIn defaultValue='Cut Down on the Development Budget: Eliminate the need of DevOps
-              with our auto managed solutions'/>
-              
+              <TextFadeIn
+                defaultValue="Cut Down on the Development Budget: Eliminate the need of DevOps
+              with our auto managed solutions"
+              />
             </p>
           </div>
         </div>
@@ -382,22 +423,26 @@ const InvestorPage = () => {
 
       <div className="unique-press-release-container">
         <div className="unique-press-text-section">
-          <h1><TextSlideUp>Press Release</TextSlideUp></h1>
+          <h1>
+            <TextSlideUp>Press Release</TextSlideUp>
+          </h1>
           <p className="unique-subtitle">
-          <TextFadeIn defaultValue='Unleash the power of real-time updates with Concule. Be the first to
+            <TextFadeIn
+              defaultValue="Unleash the power of real-time updates with Concule. Be the first to
             know about groundbreaking features, strategic partnerships, and
             exclusive events. Our platform is constantly evolving, and this is
-            your hub for all the exciting news and developments.'/>
-            
+            your hub for all the exciting news and developments."
+            />
           </p>
           <p>
-          <TextFadeIn defaultValue='Concule was established in 2022 by a team of visionary tech
+            <TextFadeIn
+              defaultValue="Concule was established in 2022 by a team of visionary tech
             enthusiasts who saw the potential of the cloud to transform how
             businesses operate. With a combined experience of over 5 years in
             cloud computing, software development, and enterprise solutions, our
             founders embarked on a mission to create a platform that is not only
-            robust and reliable but also user-centric and adaptable.'/>
-            
+            robust and reliable but also user-centric and adaptable."
+            />
           </p>
         </div>
         <div className="unique-press-content-section">
@@ -447,9 +492,9 @@ const InvestorPage = () => {
               <li key={index}>{row.join(" - ")}</li>
             ))}
           </ul>
-        )}<Footer/>
+        )}
+        <Footer />
       </div>
-      
 
       {/* ================== */}
     </div>

@@ -79,6 +79,8 @@ h1 {
 .card p {
   margin-top: 8px;
 }
+.btn-prev {
+}
 
 .progress-fill {
   padding: 1rem;
@@ -368,9 +370,13 @@ h1 span.quote {
   position: relative;
   width: 50%;
   height: 90vh;
-  overflow: hidden;
+  // overflow: hidden;
   display: flex;
   transition: transform 0.5s ease;
+}
+
+.btn-card-container {
+  display: flex;
 }
 
 .card1 {

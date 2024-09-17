@@ -24,7 +24,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 250px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px; /* Add margin to separate cards */
 }
 
@@ -48,7 +48,7 @@
   font-size: 0.9em;
   text-align: left;
   color: #666;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .prt-book-meeting {
@@ -171,6 +171,8 @@
   justify-content: center;
   position: relative;
   margin-top: 10px;
+  border-radius: 24px;
+  overflow: hidden;
 }
 
 .prd-video-container img {

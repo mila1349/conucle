@@ -485,7 +485,6 @@ h2 {
   background-clip: text;
   color: transparent;
   font-weight: bold;
-  /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); */
   max-width: 700px;
 }
 .play-button {
@@ -619,7 +618,7 @@ p.unique-subtitle {
   display: flex;
   align-items: center;
   cursor: pointer;
-  border-top: 2px solid #00bfa5;
+  border-top: 2px solid #15c363;
   padding-top: 10px;
 }
 
@@ -630,7 +629,7 @@ p.unique-subtitle {
 
 .unique-press-header i {
   font-size: 1.5rem;
-  color: #00bfa5;
+  color: #15c363;
   background-color: #e0f7fa;
   border-radius: 50%;
   padding: 10px;
@@ -657,22 +656,22 @@ p.unique-subtitle {
   border-radius: 50px;
   text-decoration: none;
   font-size: 0.9rem;
-  color: #00bfa5;
-  border: 2px solid #00bfa5;
+  color: #15c363;
+  border: 2px solid #15c363;
   display: flex;
   align-items: center;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .unique-press-footer a:hover {
-  background-color: #00bfa5;
+  background-color: #15c363;
   color: #fff;
 }
 
 .unique-press-footer a i {
   margin-right: 8px;
   font-size: 1rem;
-  color: #00bfa5;
+  color: #15c363;
 }
 
 .unique-press-footer a:hover i {
