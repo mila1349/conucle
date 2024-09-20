@@ -118,7 +118,12 @@
 }
 
 .prd-card-content {
-  flex: 1;
+  /* flex: 1; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
   padding-right: 20px;
 }
 
@@ -166,13 +171,14 @@
 
 .prd-video-container {
   display: flex;
-  width: 60%;
+  width: 50%;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-top: 10px;
   border-radius: 24px;
   overflow: hidden;
+  height: auto;
 }
 
 .prd-video-container img {

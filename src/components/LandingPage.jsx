@@ -231,8 +231,8 @@ const LandingPage = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <img src="assets/leave.png" alt="" />
-          <h1 className="conucle-1">CONUCLE</h1>
+          <img src="assets/leave.png" alt="" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"/>
+          <h1 className="conucle-1" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">CONUCLE</h1>
         </motion.div>
         <img src="assets/conucle.png" alt="Full Size" className="big-img" />
         <motion.div
@@ -242,7 +242,7 @@ const LandingPage = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h1>CONUCLE</h1>
+          <h1 data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">CONUCLE</h1>
         </motion.div>
       </div>
 

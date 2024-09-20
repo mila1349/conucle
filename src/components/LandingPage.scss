@@ -313,6 +313,7 @@ button:hover {
 
 /* custumer review start here */
 .content {
+  position: relative;
   padding: 2rem 3rem;
   margin: 50px auto;
   display: flex;
@@ -369,7 +370,7 @@ h1 span.quote {
 .cards-container1 {
   position: relative;
   width: 50%;
-  height: 90vh;
+  height: 80vh;
   // overflow: hidden;
   display: flex;
   transition: transform 0.5s ease;
@@ -377,6 +378,10 @@ h1 span.quote {
 
 .btn-card-container {
   display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card1 {

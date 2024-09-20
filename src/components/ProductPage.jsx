@@ -111,14 +111,17 @@ const ProductPage = () => {
         </div>
       </section>
       {/* partner page second section start from here  */}
-      <section className="prd-partnership-section2">
-        <div className="prd-card-container2">
+      <section class="prd-partnership-section">
+        <div class="prd-card-container">
           {/* <!-- Product Partnership Card --> */}
-          <div className="prd-partnership-card2">
-            <div className="prd-card-content2">
+          <div class="prd-partnership-card">
+            <div class="prd-card-content">
               <h3>
                 <TextSlideUp>Product Partnership</TextSlideUp>
               </h3>
+              <ul>
+                <li></li>
+              </ul>
               <p>
                 <TextFadeIn
                   defaultValue="Welcome to [Company Name], where innovation meets excellence in
@@ -141,17 +144,17 @@ const ProductPage = () => {
               </p>
               <Button text="Book a Meeting" />
             </div>
-            <motion.div className="prd-video-container2" initial={{}}>
+            <div class="prd-video-container">
               <ReactPlayer
                 url={"https://home.wistia.com/medias/nh7xw6o6x1"}
                 width="100%"
               ></ReactPlayer>
-            </motion.div>
+            </div>
           </div>
 
           {/* <!-- Cloud Partnership Card --> */}
-          <div className="prd-partnership-card prd-reverse2">
-            <div className="prd-card-content2">
+          <div class="prd-partnership-card prd-reverse">
+            <div class="prd-card-content">
               <h3>
                 <TextSlideUp>Cloud Partnership</TextSlideUp>
               </h3>
@@ -174,7 +177,7 @@ const ProductPage = () => {
               </p>
               <Button text="Book a Meeting" />
             </div>
-            <div className="prd-video-container2">
+            <div class="prd-video-container">
               <ReactPlayer
                 url={"https://home.wistia.com/medias/nh7xw6o6x1"}
                 width="100%"
@@ -183,8 +186,8 @@ const ProductPage = () => {
           </div>
 
           {/* <!-- Expertise Partnership Card --> */}
-          <div className="prd-partnership-card2">
-            <div className="prd-card-content2">
+          <div class="prd-partnership-card">
+            <div class="prd-card-content">
               <h3>
                 <TextSlideUp>Expertise Partnership</TextSlideUp>
               </h3>
@@ -207,7 +210,7 @@ const ProductPage = () => {
               </p>
               <Button text="Book a Meeting" />
             </div>
-            <div className="prd-video-container2">
+            <div class="prd-video-container">
               <ReactPlayer
                 url={"https://home.wistia.com/medias/nh7xw6o6x1"}
                 width="100%"

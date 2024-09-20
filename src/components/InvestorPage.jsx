@@ -114,8 +114,8 @@ const InvestorPage = () => {
             </h2>
             <p style={{ color: "white" }}>2023</p>
           </div>
-          <div className="content-jr">
-            <img src="assets/cloud.png" alt="Cloud" />
+          <div className="content-jr cloud">
+            <img src="assets/clouds/Cloud Thumb 03.png" alt="Cloud" />
             <p>
               <TextFadeIn
                 defaultValue="Within the first week, customers began to sign up. Our support
@@ -135,8 +135,8 @@ const InvestorPage = () => {
             </h2>
             <p style={{ color: "white" }}>2023</p>
           </div>
-          <div className="content-jr">
-            <img src="assets/cloud.png" alt="Cloud" />
+          <div className="content-jr cloud">
+            <img src="assets/clouds/Cloud Thumb 02.png" alt="Cloud" />
             <p>
               <TextFadeIn
                 defaultValue=" Within the first week, customers began to sign up. Our support
@@ -150,7 +150,7 @@ const InvestorPage = () => {
             <Button text="Read More" />
           </div>
         </div>
-        <div className="container-jr right">
+        <div className="container-jr right cloud">
           <div className="text">
             <h2>
               <TextSlideUp>June: Launch & Growth</TextSlideUp>
@@ -158,7 +158,7 @@ const InvestorPage = () => {
             <p style={{ color: "white" }}>2023</p>
           </div>
           <div className="content-jr">
-            <img src="assets/cloud.png" alt="Cloud" />
+            <img src="assets/clouds/Cloud Thumb 01.png" alt="Cloud" />
             <p>
               <TextFadeIn
                 defaultValue=" Within the first week, customers began to sign up. Our support
