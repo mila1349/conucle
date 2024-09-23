@@ -166,18 +166,10 @@ h1 {
 
   .text-content-prog {
     padding-right: 0; /* Remove right padding */
-    text-align: center; /* Center text */
+    // text-align: center; /* Center text */
     margin-bottom: 20px; /* Add margin below text */
+    width: 100%;
   }
-
-  .text-content-prog h1 {
-    font-size: 36px; /* Reduce font size */
-  }
-
-  .text-content-prog p {
-    font-size: 16px; /* Reduce font size */
-  }
-
   .start-trial {
     font-size: 16px; /* Adjust button font size */
     padding: 10px 15px; /* Adjust button padding */
@@ -193,6 +185,7 @@ h1 {
   .card {
     width: 100%; /* Full width on mobile */
     min-width: unset; /* Remove min-width constraint */
+    max-width: 100%;
   }
 
   .card h2 {
@@ -219,7 +212,7 @@ h1 {
     z-index: 2;
     margin: 0;
     font-weight: bolder;
-    font-size: 80px;
+    font-size: calc(30px + (90 - 30) * ((100vw - 320px) / (1400 - 320)));
   }
   .conucle-1 {
     color: #fff;
@@ -251,6 +244,8 @@ h1 {
     z-index: 1;
     width: 30vw;
     height: 30vw;
+    min-width: 200px;
+    min-height: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -445,14 +440,6 @@ h1 span.quote {
   background-color: #50c878;
 }
 
-@media (max-width: 768px) {
-  /* Adjustments for smaller screens if needed */
-}
-
-@media (max-width: 480px) {
-  /* Adjustments for very small screens if needed */
-}
-
 /* end of client review */
 /* last section image  */
 
@@ -485,7 +472,6 @@ h1 span.quote {
 }
 
 .feature-card p {
-  font-size: 16px;
   color: #333;
 }
 
@@ -502,4 +488,17 @@ h1 span.quote {
   font-size: 24px;
   color: #158d56;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens if needed */
+  .feature-card {
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for very small screens if needed */
 }

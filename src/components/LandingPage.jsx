@@ -231,8 +231,21 @@ const LandingPage = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <img src="assets/leave.png" alt="" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"/>
-          <h1 className="conucle-1" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">CONUCLE</h1>
+          <img
+            src="assets/leave.png"
+            alt=""
+            data-scroll
+            data-scroll-speed="-2"
+            data-scroll-direction="horizontal"
+          />
+          <h1
+            className="conucle-1"
+            data-scroll
+            data-scroll-speed="-2"
+            data-scroll-direction="horizontal"
+          >
+            CONUCLE
+          </h1>
         </motion.div>
         <img src="assets/conucle.png" alt="Full Size" className="big-img" />
         <motion.div
@@ -242,7 +255,13 @@ const LandingPage = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h1 data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">CONUCLE</h1>
+          <h1
+            data-scroll
+            data-scroll-speed="2"
+            data-scroll-direction="horizontal"
+          >
+            CONUCLE
+          </h1>
         </motion.div>
       </div>
 
@@ -361,13 +380,27 @@ const LandingPage = () => {
 
       <nav className="navigation">
         <div className="ribbon">
-          <button>Development Interface</button>
-          <button>Pre-Built Components</button>
-          <button>Customizable Templates</button>
-          <button>Automated Workflows</button>
-          <button>Analytics and Reporting</button>
-          <button>Scalability</button>
-          <button>Scalability</button>
+          <button>
+            <p> Development Interface</p>
+          </button>
+          <button>
+            <p>Pre-Built Components</p>
+          </button>
+          <button>
+            <p>Customizable Templates</p>
+          </button>
+          <button>
+            <p>Automated Workflows</p>
+          </button>
+          <button>
+            <p>Analytics and Reporting</p>
+          </button>
+          <button>
+            <p>Scalability</p>
+          </button>
+          <button>
+            <p>Scalability</p>
+          </button>
         </div>
       </nav>
 

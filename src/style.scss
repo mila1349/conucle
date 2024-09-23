@@ -95,7 +95,6 @@ html.has-scroll-dragging {
   bottom: 0;
 }
 
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -153,7 +152,7 @@ h1 {
   color: $secondary-color;
   font-weight: lighter;
   // font-size: 160px;
-  font-size: calc(32px + (50 - 32) * ((100vw - 320px) / (1400 - 320)));
+  font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (1400 - 320)));
 }
 h2 {
   font-family: "Quicksand-Regular", sans-serif;
