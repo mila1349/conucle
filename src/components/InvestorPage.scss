@@ -226,7 +226,6 @@ button:hover {
 }
 
 .text-section-left h1 {
-  font-size: 36px;
   color: #333;
   margin: 0;
   line-height: 1.2;
@@ -303,7 +302,6 @@ button:hover {
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
-    padding: 10px;
   }
 
   .stats-wrapper {
@@ -315,13 +313,6 @@ button:hover {
     margin-bottom: 20px;
   }
 
-  .text-section-left h1 {
-    font-size: 28px;
-  }
-
-  .text-section-right p {
-    font-size: 14px;
-  }
 }
 
 /* third potencial section start here */
@@ -359,6 +350,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  min-width: 250px;
 }
 
 .feature-item:nth-child(1) {
@@ -734,6 +726,53 @@ p.unique-subtitle {
     right: 10px;
     flex-direction: column;
     align-items: flex-end;
+  }
+  .timeline{
+    padding: 20px;
+  }
+  .big-container{
+    padding: 20px;
+  }
+  .features-pt{
+    display: flex;
+    justify-content: center;
+  }
+  .feature-item{
+    margin-bottom: 20px;
+  }
+  .cta-section{
+    flex-direction: column;
+  }
+  .cta-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .video-card-bns{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 5fr));
+  }
+  .unique-press-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .unique-press-header h5{
+    width: 100%;
+  }
+  .unique-press-header{
+    margin-bottom: 2rem;
+  }
+  .unique-press-footer{
+    position: relative;
+    // flex-direction: row;
+    a{
+      width: 100%;
+    }
+  }
+  .main-banner .banner-content h1{
+    font-size: 1.5rem;
+    // background: linear-gradient(to left, black 68%, white 32%);
   }
 }
 

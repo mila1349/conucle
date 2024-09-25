@@ -139,7 +139,6 @@
 }
 
 .prd-card-content p {
-  font-size: 1em;
   color: #666;
   text-align: left;
 }
@@ -206,6 +205,11 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .prd-partnership-section{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
   .prt-card-container {
     flex-direction: column; /* Stack cards vertically */
     align-items: center;
@@ -228,6 +232,7 @@
 
   .prd-card-content {
     padding: 10px; /* Reduce padding for smaller screens */
+    width: 100%;
   }
 
   .prd-video-container {
@@ -249,10 +254,6 @@
 
   .prd-card-content h3 {
     font-size: 1.2em; /* Adjust font size for smaller screens */
-  }
-
-  .prd-card-content p {
-    font-size: 0.9em; /* Adjust font size for smaller screens */
   }
 
   .prd-meeting-button span {
