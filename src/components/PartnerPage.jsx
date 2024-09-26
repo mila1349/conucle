@@ -177,14 +177,29 @@ const PartnerPage = () => {
               <h3>
                 <TextSlideUp>Cloud Partnership</TextSlideUp>
               </h3>
-              <p>
+              <ul>
+                <li>
+                <TextFadeIn
+                  defaultValue="Welcome to [Company Name], where innovation meets excellence in
+                cloud technology. "
+                />
+                </li>
+                <li>
+                <TextFadeIn
+                  defaultValue="mission is to empower businesses through
+                robust and reliable cloud solutions that drive efficiency and
+                innovation."
+                />
+                </li>
+              </ul>
+              {/* <p>
                 <TextFadeIn
                   defaultValue="Welcome to [Company Name], where innovation meets excellence in
                 cloud technology. Our mission is to empower businesses through
                 robust and reliable cloud solutions that drive efficiency and
                 innovation."
                 />
-              </p>
+              </p> */}
               <p>
                 <TextFadeIn
                   defaultValue="With our expertise in cloud computing, we help organizations of

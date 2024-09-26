@@ -126,6 +126,10 @@
   flex-direction: column;
   padding-right: 20px;
 }
+.prd-card-content li{
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
 
 .prd-partnership-card.prd-reverse .prd-card-content {
   padding-right: 0;

@@ -120,28 +120,20 @@ const ProductPage = () => {
                 <TextSlideUp>Product Partnership</TextSlideUp>
               </h3>
               <ul>
-                <li></li>
+                <li>
+                <TextFadeIn
+                  defaultValue="where innovation meets excellence in
+                cloud technology."
+                />
+                </li>
+                <li>
+                <TextFadeIn
+                  defaultValue="where innovation meets excellence in
+                cloud technology."
+                />
+                </li>
               </ul>
-              <p>
-                <TextFadeIn
-                  defaultValue="Welcome to [Company Name], where innovation meets excellence in
-                cloud technology. Founded with a vision to reshape the digital
-                landscape, we are dedicated to providing cutting-edge cloud
-                solutions that empower businesses to thrive in an ever-evolving
-                technological world."
-                />
-              </p>
-              <p>
-                <TextFadeIn
-                  defaultValue="[Company Name] was established in [Year] by a team of visionary
-                entrepreneurs who saw the potential of the cloud to transform
-                businesses. Today, with a combined experience of over [X] years
-                in cloud computing, software development, and enterprise
-                solutions, our team has established an all-in-one service
-                platform that is not only robust and reliable but also
-                user-centric and adaptable."
-                />
-              </p>
+              
               <Button text="Book a Meeting" />
             </div>
             <div class="prd-video-container">
@@ -158,23 +150,20 @@ const ProductPage = () => {
               <h3>
                 <TextSlideUp>Cloud Partnership</TextSlideUp>
               </h3>
-              <p>
+              <ul>
+                <li>
                 <TextFadeIn
-                  defaultValue="Welcome to [Company Name], where innovation meets excellence in
-                cloud technology. Our mission is to empower businesses through
-                robust and reliable cloud solutions that drive efficiency and
-                innovation."
+                  defaultValue="where innovation meets excellence in
+                cloud technology."
                 />
-              </p>
-              <p>
+                </li>
+                <li>
                 <TextFadeIn
-                  defaultValue="With our expertise in cloud computing, we help organizations of
-                all sizes adapt to the digital age with scalable, secure, and
-                cost-effective solutions. Our cloud partnership services are
-                designed to provide businesses with the agility they need to
-                succeed in a fast-paced environment."
+                  defaultValue="where innovation meets excellence in
+                cloud technology."
                 />
-              </p>
+                </li>
+              </ul>
               <Button text="Book a Meeting" />
             </div>
             <div class="prd-video-container">
@@ -191,23 +180,20 @@ const ProductPage = () => {
               <h3>
                 <TextSlideUp>Expertise Partnership</TextSlideUp>
               </h3>
-              <p>
+              <ul>
+                <li>
                 <TextFadeIn
-                  defaultValue="Welcome to [Company Name], where we bring together expertise and
-                innovation to deliver unparalleled technology solutions. Our
-                focus is on building long-term partnerships that drive business
-                success through continuous improvement and innovation."
+                  defaultValue="where innovation meets excellence in
+                cloud technology."
                 />
-              </p>
-              <p>
+                </li>
+                <li>
                 <TextFadeIn
-                  defaultValue="With our deep knowledge of the latest technological trends, we
-                provide expert guidance and solutions that help businesses stay
-                ahead of the competition. Our expertise partnership services are
-                tailored to meet the unique needs of each client, ensuring that
-                they receive the best possible support."
+                  defaultValue="where innovation meets excellence in
+                cloud technology."
                 />
-              </p>
+                </li>
+              </ul>
               <Button text="Book a Meeting" />
             </div>
             <div class="prd-video-container">
