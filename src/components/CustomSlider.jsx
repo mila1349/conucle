@@ -31,7 +31,7 @@ const CustomSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 3000); // Change slide every 5 seconds
+    }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, []);

@@ -337,28 +337,20 @@ const LandingPage = () => {
                   opacity: getOpacity(index),
                 }}
                 initial={
-                  exit === null
-                    ? "initView"
-                    : !exit && reviewData[0].id === item.id && "hidden"
+                 !exit && reviewData[0].id === item.id && "hidden"
                 }
                 animate={
-                  view && !exit
-                    ? {
+                  !exit
+                    && {
                         top: `${index * 20}px`,
                         left: `${index * 30}px`,
                         zIndex: 0 + (reviewData.length - index),
                         opacity: getOpacity(index),
                       }
-                    : {}
                 }
                 exit={exit && "hidden"}
                 transition={
-                  exit === null
-                    ? {
-                        duration: 0.2,
-                        delay: 0.5 * (reviewData.length - index - 1),
-                      }
-                    : { duration: 0.2 }
+                  { duration: 0.2 }
                 }
               >
                 <img src={item.img} alt="Customerimg" />

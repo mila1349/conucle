@@ -122,13 +122,14 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  width: 50%;
+  width: 40%;
   flex-direction: column;
   padding-right: 20px;
 }
 .prd-card-content li{
   list-style-type: disc;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .prd-partnership-card.prd-reverse .prd-card-content {
@@ -174,12 +175,13 @@
 
 .prd-video-container {
   display: flex;
-  width: 50%;
+  width: 60%;
+  height: 320px !important;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-top: 10px;
-  border-radius: 24px;
+  border-radius: 12px;
   overflow: hidden;
   height: auto;
 }
@@ -241,6 +243,7 @@
 
   .prd-video-container {
     width: 100%; /* Full width for mobile */
+    height: 160px !important;
   }
 
   .prd-play-button {
