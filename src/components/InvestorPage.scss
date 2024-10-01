@@ -468,10 +468,15 @@ h2 {
   // overflow: hidden;
 }
 
+
 .main-banner {
   .banner-img {
     width: 60vw;
     position: relative;
+  }
+
+  .img-split{
+    width: 60vw;
   }
 
   .banner-content {
@@ -772,7 +777,7 @@ p.unique-subtitle {
     }
   }
   .main-banner .banner-content h1{
-    font-size: 1.5rem;
+    font-size: 1rem;
     // background: linear-gradient(to left, black 68%, white 32%);
   }
 }
