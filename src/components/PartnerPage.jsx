@@ -75,7 +75,8 @@ const PartnerPage = () => {
 
   return (
     <div className="home-container" id="main-container">
-      <CustomSlider />
+      {/* <CustomSlider /> */}
+      <img src="assets/videosplit.jpg" alt="" className="img-split"/>
       <section class="prt-partnership-section">
         <h2>
           <TextSlideUp>Partnership Opportunity for Everyone</TextSlideUp>
@@ -177,29 +178,6 @@ const PartnerPage = () => {
               <h3>
                 <TextSlideUp>Cloud Partnership</TextSlideUp>
               </h3>
-              <ul>
-                <li>
-                <TextFadeIn
-                  defaultValue="Welcome to [Company Name], where innovation meets excellence in
-                cloud technology. "
-                />
-                </li>
-                <li>
-                <TextFadeIn
-                  defaultValue="mission is to empower businesses through
-                robust and reliable cloud solutions that drive efficiency and
-                innovation."
-                />
-                </li>
-              </ul>
-              {/* <p>
-                <TextFadeIn
-                  defaultValue="Welcome to [Company Name], where innovation meets excellence in
-                cloud technology. Our mission is to empower businesses through
-                robust and reliable cloud solutions that drive efficiency and
-                innovation."
-                />
-              </p> */}
               <p>
                 <TextFadeIn
                   defaultValue="With our expertise in cloud computing, we help organizations of

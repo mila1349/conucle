@@ -74,7 +74,8 @@ const ProductPage = () => {
 
   return (
     <div className="home-container" id="main-container">
-      <CustomSlider />
+      {/* <CustomSlider /> */}
+      <img src="assets/videosplit.jpg" alt="" className="img-split"/>
       <section className="prt-partnership-section2">
         <h2>
           <TextSlideUp>

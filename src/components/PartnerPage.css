@@ -11,6 +11,12 @@
   margin-bottom: 40px;
 }
 
+.img-split{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 .prt-card-container {
   display: flex;
   justify-content: center;

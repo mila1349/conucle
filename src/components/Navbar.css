@@ -7,9 +7,10 @@
   padding: 0 20px;
   /* color: rgb(112, 38, 38); */
   height: 60px;
-  margin: 0 60px;
-  position: relative;
+  /* margin: 0 60px; */
+  position: absolute;
   z-index: 1000; /* Ensure navbar is on top */
+  width: 100vw;
 }
 
 .navbar-logo img {

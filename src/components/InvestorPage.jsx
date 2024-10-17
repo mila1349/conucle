@@ -343,13 +343,13 @@ const InvestorPage = () => {
 
       <div className="container-bn">
         <div className="main-banner">
-          {/* <div className="banner-img">
+           <div className="banner-img">
             <ReactPlayer
               url={"https://home.wistia.com/medias/nh7xw6o6x1"}
               width="100%"
             ></ReactPlayer>
-          </div> */}
-          <img src="assets/videosplit.jpg" alt="" className="img-split"/>
+          </div>
+          {/* <img src="assets/videosplit.jpg" alt="" className="img-split"/> */}
 
           <div className="banner-content">
             <h1>
