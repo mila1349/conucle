@@ -91,10 +91,6 @@ const InvestorPage = () => {
     };
   }, [wistiaVideos]);
 
-  useEffect(() => {
-    console.log("selectedNews", selectedNews);
-  }, [selectedNews]);
-
   return (
     <div className="home-container" id="main-container">
       <header>
@@ -343,7 +339,7 @@ const InvestorPage = () => {
 
       <div className="container-bn">
         <div className="main-banner">
-           <div className="banner-img">
+          <div className="banner-img">
             <ReactPlayer
               url={"https://home.wistia.com/medias/nh7xw6o6x1"}
               width="100%"

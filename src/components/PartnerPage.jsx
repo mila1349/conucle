@@ -76,7 +76,18 @@ const PartnerPage = () => {
   return (
     <div className="home-container" id="main-container">
       {/* <CustomSlider /> */}
-      <img src="assets/videosplit.jpg" alt="" className="img-split"/>
+      <div className="haha">
+        <img src="assets/videosplit.jpg" alt="" className="img-split"/>
+        <div className="text-content">
+          <h1>
+            <TextSlideUp>Low-Code Cloud</TextSlideUp>
+          </h1>
+          <p>
+            <TextFadeIn defaultValue="With our AI-Powered performance management, we ensure that our cloud can be relied upon for time and computational sensitivity." />
+          </p>
+          <Button text="Start Free Trial" />
+        </div>
+      </div>
       <section class="prt-partnership-section">
         <h2>
           <TextSlideUp>Partnership Opportunity for Everyone</TextSlideUp>
